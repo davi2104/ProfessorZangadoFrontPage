@@ -1,0 +1,226 @@
+/*
+
+Collor Pallet
+
+Azul escuro
+#273540
+Beje
+#8b5839
+
+
+*/
+html{
+    background-color: #e5ecf1;
+    /* background-image: url(imgs/pexels-pixabay-235985.jpg);
+    background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* background:  url(imgs/pexels-aleksandar-pasaric-2338113.jpg) no-repeat center center fixed;  */
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+body{
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Reenie Beanie', cursive;
+    margin: 0;
+}
+h2, h3, h4{
+    font-family: 'Amatic SC', cursive;
+    color: #8b5839; 
+    position: relative;
+}
+
+p{
+    font-size: 16px
+}
+
+
+.containerflex{
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    min-height: 100vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+      
+background-color: #8b5839;
+background-image: url(imgs/pexels-pixabay-235985.jpg);
+    
+}
+.containerflex h2, h3{
+    font-weight: 150;
+    font-family: 'Reenie Beanie', cursive;
+    color: white; 
+}
+.containerflex::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; 
+ 
+    
+}
+
+.text-box{
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    min-height: 100vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#text-box h2{
+    font-size: 100px;
+} 
+#text-box h3{
+    font-size: 54px;
+}
+
+
+
+
+
+.containergrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr;
+        gap: 10px;   
+}
+
+/* Abbout me section  */
+.aboutMeContainer{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+ 
+}
+
+.aboutMeContainer{
+    background-color: #ffffff;
+    color: #273540;
+    /* color: #8b5839; */
+    }
+.aboutMeContentGrid{
+    display: grid;
+    grid-template-columns: 3fr 5fr 3fr ;
+    grid-template-rows: 1fr 2fr;
+    justify-items: center;
+}
+
+#aboutMe{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -10px;
+    grid-row: 1/-1;
+    font-size: 100px;
+}
+#aboutMeText{
+    font-size: 25px;
+    grid-column: 2 / -1;
+    grid-row: 1 / -2;
+}
+#personalInterests{
+    font-size: 27px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -5px;
+    grid-row: 2 / 3;
+    grid-column: 3 /4;
+}
+#personalInterestsText{
+    font-size: 25px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.FinalContainer{
+    min-height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6,minmax(10px, 1fr));
+    grid-template-rows: repeat(8, minmax(10px, 1fr));
+    column-gap: 50px;
+}
+.MoodRoom{
+    grid-column: 1 / 4;
+    grid-row: 1 / -1;
+
+    background-image: url(imgs/moodRoom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.PaperTexture{
+    grid-column: 3 / -1;
+    grid-row: 1 / -1;
+
+    background-image: url(imgs/white-crumpled-paper-texture-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+    clip-path: polygon(8% 0%, 12% 2%, 9% 6%, 11% 7%, 9% 10%, 12% 11%, 8% 14%, 14% 15%, 10% 18%, 13% 21%, 9% 25%, 14% 28%, 7% 30%, 9% 32%, 5% 35%, 8% 36%, 7% 38%, 12% 40%, 9% 41%, 10% 43%, 8% 45%, 10% 47%, 7% 50%, 8% 53%, 5% 55%, 6% 56%, 5% 59%, 6% 60%, 5% 64%, 7% 67%, 5% 70%, 8% 72%, 6% 76%, 10% 78%, 6% 83%, 9% 86%, 5% 91%, 6% 93%, 3% 98%, 4% 100%, 100% 100%, 100% 0%);
+   }
+.FinalText{
+    grid-column: 4 / 6;
+    grid-row: 3 / 4;
+    /* background-color: #ffffff; */
+    z-index: 2;
+    justify-self: center;
+overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
+}
+.FinalText h2{
+   
+    margin: 0;
+    font-size: 85px;
+    color: #8b5839;
+    align-self: stretch;
+    justify-self: stretch;
+    
+}
+.FinalText2{
+    grid-column: 4 / 6;
+    grid-row: 4 / 8;
+    /* background-color: #ffffff; */
+    z-index: 2;
+    justify-self: center;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+.FinalText2 h3{
+  
+    margin: 0;
+    font-size: 35px;
+    color: #8b5839;
+    align-self: stretch;
+    justify-self: stretch;
+}
+.perfilzinho{
+    grid-column: -1 / -2;
+    grid-row: 1 / 2;
+    z-index: 4;
+    justify-self: end;
+}
+#perfilzinho{
+    margin-right: 50px;
+    max-width: 340px;
+    max-height: 340px;
+
+    clip-path: polygon(9% 2%, 4% 1%, 4% 5%, 9% 8%, 3% 15%, 8% 29%, 2% 37%, 8% 52%, 11% 62%, 4% 69%, 7% 79%, 3% 83%, 8% 87%, 6% 94%, 13% 96%, 15% 99%, 29% 97%, 44% 99%, 59% 98%, 68% 99%, 84% 96%, 91% 99%, 98% 94%, 96% 86%, 100% 84%, 95% 76%, 100% 73%, 94% 59%, 98% 54%, 95% 45%, 99% 37%, 95% 25%, 100% 18%, 94% 11%, 100% 4%, 95% 2%, 87% 0%, 77% 4%, 70% 1%, 64% 3%, 58% 1%, 51% 4%, 49% 2%, 37% 4%, 34% 1%, 25% 5%, 17% 1%, 14% 4%);
+
+}
+
